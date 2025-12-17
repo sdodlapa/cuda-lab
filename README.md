@@ -2,17 +2,24 @@
 
 A personal CUDA programming learning repository with documentation and practice examples.
 
+## 🆓 No GPU? No Problem!
+
+**Run everything on Google Colab's free T4 GPU** - start learning CUDA in 60 seconds!
+
+👉 **[Colab Quick Start Guide](COLAB-QUICKSTART.md)** 👈
+
 ---
 
 ## 🚀 Quick Access
 
 | Resource | Description |
 |----------|-------------|
-| 🎯 **[START HERE: Learning Path](learning-path/README.md)** | **Interactive notebooks for learning CUDA** |
+| 🆓 **[Colab Quick Start](COLAB-QUICKSTART.md)** | **Run CUDA on free GPU in your browser!** |
+| 🎯 **[Learning Path](learning-path/README.md)** | Interactive notebooks for learning CUDA |
 | 📅 **[12-Week Curriculum](learning-path/12-week-curriculum.md)** | Structured learning plan |
-| 📖 **[CUDA Programming Guide](cuda-programming-guide/index.md)** | Full reference documentation |
-| ⚡ **[Quick Reference Cheatsheet](notes/cuda-quick-reference.md)** | Common patterns & syntax |
 | 🔬 **[Practice Exercises](practice/)** | Standalone CUDA code exercises |
+| 📖 **[CUDA Programming Guide](cuda-programming-guide/index.md)** | Full reference documentation |
+| ⚡ **[Quick Reference](notes/cuda-quick-reference.md)** | Common patterns & syntax cheatsheet |
 
 ---
 
@@ -20,14 +27,21 @@ A personal CUDA programming learning repository with documentation and practice 
 
 The **[Learning Path](learning-path/README.md)** provides interactive Jupyter notebooks that combine theory, code examples, and exercises in one place.
 
+### 🆓 Run on Google Colab (Free GPU!)
+
+All notebooks and exercises can run on Google Colab's free T4 GPU - no setup required!
+
+- **[Colab Setup Guide](learning-path/SETUP-GPU.md)** - Start learning in 60 seconds
+- **[Practice Exercises on Colab](practice/COLAB-SETUP.md)** - Run CUDA code in your browser
+
 ### Week 1: GPU Fundamentals (Available Now!)
-| Day | Notebook | Topics |
-|-----|----------|--------|
-| 1 | [GPU Basics](learning-path/week-01/day-1-gpu-basics.ipynb) | CPU vs GPU, device query, first kernel |
-| 2 | [Thread Indexing](learning-path/week-01/day-2-thread-indexing.ipynb) | 1D/2D indexing, grid-stride loops |
-| 3 | [Memory Basics](learning-path/week-01/day-3-memory-basics.ipynb) | Transfers, pinned memory, optimization |
-| 4 | [Error Handling](learning-path/week-01/day-4-error-handling.ipynb) | Debugging, common pitfalls |
-| 5 | [Checkpoint Quiz](learning-path/week-01/checkpoint-quiz.md) | Self-assessment |
+| Day | Notebook | Topics | Colab |
+|-----|----------|--------|-------|
+| 1 | [GPU Basics](learning-path/week-01/day-1-gpu-basics.ipynb) | CPU vs GPU, device query, first kernel | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sdodlapa/cuda-lab/blob/main/learning-path/week-01/day-1-gpu-basics.ipynb) |
+| 2 | [Thread Indexing](learning-path/week-01/day-2-thread-indexing.ipynb) | 1D/2D indexing, grid-stride loops | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sdodlapa/cuda-lab/blob/main/learning-path/week-01/day-2-thread-indexing.ipynb) |
+| 3 | [Memory Basics](learning-path/week-01/day-3-memory-basics.ipynb) | Transfers, pinned memory, optimization | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sdodlapa/cuda-lab/blob/main/learning-path/week-01/day-3-memory-basics.ipynb) |
+| 4 | [Error Handling](learning-path/week-01/day-4-error-handling.ipynb) | Debugging, common pitfalls | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sdodlapa/cuda-lab/blob/main/learning-path/week-01/day-4-error-handling.ipynb) |
+| 5 | [Checkpoint Quiz](learning-path/week-01/checkpoint-quiz.md) | Self-assessment | - |
 
 See the **[12-Week Curriculum](learning-path/12-week-curriculum.md)** for the complete plan.
 
