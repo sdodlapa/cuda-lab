@@ -1,52 +1,35 @@
 # CUDA Tutorials
 
-Self-paced tutorials for learning CUDA programming from beginner to advanced.
+Supplementary reading materials for the CUDA learning path.
 
-## 📚 Tutorial Structure
+## 📚 Structure
 
-Each tutorial includes:
-- Conceptual explanation with diagrams
-- Code examples
-- Links to exercises
-- Links to relevant CUDA Programming Guide sections
+The primary learning happens in the **[Learning Path Notebooks](../learning-path/)**.
+This folder contains additional reference reading.
 
-## 📖 Curriculum Overview
+## 📖 Reference Materials
 
-### Phase 1: Foundations (Weeks 1-3)
-| # | Tutorial | Description |
-|---|----------|-------------|
-| 01 | [CPU vs GPU](01-foundations/01-cpu-vs-gpu.md) | Why parallel computing? |
-| 02 | GPU Architecture | SMs, cores, warps explained |
-| 03 | CUDA Ecosystem | Toolkit, driver, runtime |
-| 04 | Development Setup | nvcc, nsight, debugging |
-| 05 | Execution Model | Kernels, threads, blocks |
-| 06 | Thread Hierarchy | 1D, 2D, 3D indexing |
-| 07 | Kernel Launch | <<<grid, block>>> syntax |
-| 08 | Synchronization Basics | __syncthreads() |
-| 09 | Memory Spaces | Global, shared, local, constant |
-| 10 | Memory Allocation | cudaMalloc, cudaFree |
-| 11 | Data Transfer | cudaMemcpy patterns |
-| 12 | Pinned Memory | cudaMallocHost benefits |
+### Foundations
+| Topic | Tutorial | Related Notebook |
+|-------|----------|------------------|
+| CPU vs GPU | [01-cpu-vs-gpu.md](01-foundations/01-cpu-vs-gpu.md) | [Week 1 Day 1](../learning-path/week-01/day-1-gpu-basics.ipynb) |
 
-### Phase 2: Core CUDA (Weeks 4-7)
-| # | Tutorial | Description |
-|---|----------|-------------|
-| 01 | Reduction (Naive) | Sum of array |
-| 02 | Reduction (Optimized) | Sequential addressing |
-| 03 | Reduction (Warp) | Warp-level primitives |
-| 04 | Reduction (Atomic) | Using atomics |
-| 05-08 | Scan | Prefix sum algorithms |
-| 09-12 | Histogram & Sort | Parallel algorithms |
-| 13-16 | Matrix Operations | GEMM, transpose |
+## 🎯 Primary Learning Path
 
-### Phase 3-7
-See [Full Curriculum](../notes/cuda-learning-curriculum.md)
+For hands-on learning, use the interactive notebooks:
+
+| Week | Topic | Notebooks |
+|------|-------|-----------|
+| 1 | GPU Fundamentals | [week-01/](../learning-path/week-01/) |
+| 2 | Memory Patterns | [week-02/](../learning-path/week-02/) |
+| 3+ | Coming soon... | |
 
 ## 🔗 Quick Links
 
-- [CUDA Programming Guide](../cuda-programming-guide/index.md) - Reference documentation
-- [Quick Reference Cheatsheet](../notes/cuda-quick-reference.md) - Common patterns
+- [12-Week Curriculum](../learning-path/12-week-curriculum.md) - Full learning plan
 - [Practice Exercises](../practice/) - Hands-on coding
+- [CUDA Programming Guide](../cuda-programming-guide/index.md) - Reference docs
+- [Quick Reference](../notes/cuda-quick-reference.md) - Cheatsheet
 
 ---
 
