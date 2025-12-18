@@ -13,8 +13,8 @@ Hands-on CUDA programming exercises organized by topic and difficulty.
 | Exercise | Description | Colab |
 |----------|-------------|-------|
 | Device Query | Query GPU properties | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sdodlapa/cuda-lab/blob/main/practice/01-foundations/ex01-device-query/colab-device-query.ipynb) |
-| Hello GPU | First CUDA kernel | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sdodlapa/cuda-lab/blob/main/practice/01-foundations/ex02-hello-gpu/colab-hello-gpu.ipynb) |
-
+| Hello GPU | First CUDA kernel | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sdodlapa/cuda-lab/blob/main/practice/01-foundations/ex02-hello-gpu/colab-hello-gpu.ipynb) || 03: Vector Add | Memory transfers & computation | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sdodlapa/cuda-lab/blob/main/practice/01-foundations/ex03-vector-add/colab-vector-add.ipynb) |
+| 04: 2D Indexing | 2D grids for matrices | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sdodlapa/cuda-lab/blob/main/practice/01-foundations/ex04-2d-indexing/colab-2d-indexing.ipynb) |
 ---
 
 ## 📂 Exercise Structure
@@ -49,11 +49,6 @@ practice/
 
 📝 [README](01-foundations/ex01-device-query/README.md) | 💻 [Starter Code](01-foundations/ex01-device-query/device_query.cu) | ✅ [Solution](01-foundations/ex01-device-query/solution.cu) | 🚀 [Colab](01-foundations/ex01-device-query/colab-device-query.ipynb)
 
-**Tasks**:
-- Complete the device query program
-- Understand key GPU specifications
-- Calculate theoretical peak performance
-
 ---
 
 ### Exercise 02: Hello GPU
@@ -63,10 +58,35 @@ practice/
 
 📝 [README](01-foundations/ex02-hello-gpu/README.md) | 💻 [Starter Code](01-foundations/ex02-hello-gpu/hello_gpu.cu) | ✅ [Solution](01-foundations/ex02-hello-gpu/solution.cu) | 🚀 [Colab](01-foundations/ex02-hello-gpu/colab-hello-gpu.ipynb)
 
+---
+
+### Exercise 03: Vector Addition ⭐ NEW
+**Goal**: Your first real GPU computation
+
+**Topics**: `cudaMalloc`, `cudaMemcpy`, `cudaFree`, global thread indexing, bounds checking
+
+📝 [README](01-foundations/ex03-vector-add/README.md) | 💻 [Starter Code](01-foundations/ex03-vector-add/vector_add.cu) | ✅ [Solution](01-foundations/ex03-vector-add/solution.cu) | 🚀 [Colab](01-foundations/ex03-vector-add/colab-vector-add.ipynb)
+
 **Tasks**:
-- Write a kernel that prints from GPU
-- Launch with different configurations
-- Understand parallel execution
+- Allocate GPU memory
+- Transfer data host ↔ device
+- Launch kernel with correct grid size
+- Verify results
+
+---
+
+### Exercise 04: 2D Grid Indexing ⭐ NEW
+**Goal**: Work with 2D data (images, matrices)
+
+**Topics**: `dim3`, 2D block/grid dimensions, row-major layout, matrix operations
+
+📝 [README](01-foundations/ex04-2d-indexing/README.md) | 💻 [Starter Code](01-foundations/ex04-2d-indexing/grid_2d.cu) | ✅ [Solution](01-foundations/ex04-2d-indexing/solution.cu) | 🚀 [Colab](01-foundations/ex04-2d-indexing/colab-2d-indexing.ipynb)
+
+**Tasks**:
+- Use dim3 for 2D configurations
+- Calculate row/col from thread indices
+- Handle boundary conditions
+- Process matrices in parallel
 
 ---
 
